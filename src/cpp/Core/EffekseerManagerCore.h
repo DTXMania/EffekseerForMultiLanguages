@@ -1,6 +1,7 @@
 #pragma once
 
 #include "EffekseerBackendCore.h"
+#include <d3d11.h>
 
 class EffekseerEffectCore;
 
@@ -22,7 +23,9 @@ public:
 	EffekseerManagerCore() = default;
 	~EffekseerManagerCore();
 
-	bool Initialize(int32_t spriteMaxCount, bool srgbMode = false);
+	bool InitializeOpenGL(int32_t spriteMaxCount, bool srgbMode = false);
+
+	bool InitializeDX11(void* device, void* context, int32_t spriteMaxCount, D3D11_COMPARISON_FUNC comparisonFunc = D3D11_COMPARISON_FUNC::D3D11_COMPARISON_LESS_EQUAL, bool srgbMode = false, bool isMSAAEnabled = false);
 
 	void Update(float deltaFrames);
 

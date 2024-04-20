@@ -3,6 +3,7 @@
 #include "EffekseerEffectCore.h"
 #include "EffekseerRenderer/GraphicsDevice.h"
 #include <EffekseerRendererGL.h>
+#include <EffekseerRendererDX11.h>
 
 inline void matrixFromValues(::Effekseer::Matrix44& matrix,
 							 float matrixArray0,
@@ -76,7 +77,7 @@ EffekseerManagerCore::~EffekseerManagerCore()
 	renderer_.Reset();
 }
 
-bool EffekseerManagerCore::Initialize(int32_t spriteMaxCount, bool srgbMode)
+bool EffekseerManagerCore::InitializeOpenGL(int32_t spriteMaxCount, bool srgbMode)
 {
 	if (manager_ != nullptr || renderer_ != nullptr)
 	{
@@ -91,6 +92,41 @@ bool EffekseerManagerCore::Initialize(int32_t spriteMaxCount, bool srgbMode)
 
 	manager_ = ::Effekseer::Manager::Create(spriteMaxCount);
 	renderer_ = ::EffekseerRendererGL::Renderer::Create(spriteMaxCount, EffekseerRendererGL::OpenGLDeviceType::OpenGL3);
+
+	if (manager_ == nullptr || renderer_ == nullptr)
+	{
+		manager_.Reset();
+		renderer_.Reset();
+		Effekseer::Log(Effekseer::LogType::Error, "Failed to initialize EffekseerManagerCore : RendererError");
+		return false;
+	}
+
+	manager_->SetSetting(setting);
+
+	manager_->SetSpriteRenderer(renderer_->CreateSpriteRenderer());
+	manager_->SetRibbonRenderer(renderer_->CreateRibbonRenderer());
+	manager_->SetRingRenderer(renderer_->CreateRingRenderer());
+	manager_->SetTrackRenderer(renderer_->CreateTrackRenderer());
+	manager_->SetModelRenderer(renderer_->CreateModelRenderer());
+
+	return true;
+}
+
+bool EffekseerManagerCore::InitializeDX11(void* device, void* context, int32_t spriteMaxCount, D3D11_COMPARISON_FUNC comparisonFunc, bool srgbMode, bool isMSAAEnabled)
+{
+	if (manager_ != nullptr || renderer_ != nullptr)
+	{
+		return false;
+	}
+	auto setting = EffekseerSettingCore::create(srgbMode);
+	if (setting == nullptr)
+	{
+		Effekseer::Log(Effekseer::LogType::Error, "Failed to initialize EffekseerManagerCore : GraphicsError");
+		return false;
+	}
+
+	manager_ = ::Effekseer::Manager::Create(spriteMaxCount);
+	renderer_ = ::EffekseerRendererDX11::Renderer::Create((ID3D11Device*)device, (ID3D11DeviceContext*) context, spriteMaxCount, comparisonFunc, isMSAAEnabled);
 
 	if (manager_ == nullptr || renderer_ == nullptr)
 	{
