@@ -35,7 +35,7 @@ public:
 
 	void UpdateHandleToMoveToFrame(int handle, float v);
 
-	int Play(EffekseerEffectCore* effect);
+	int Play(EffekseerEffectCore* effect, float x = 0, float y = 0, float z = 0, int32_t startFrame = 0);
 
 	void StopAllEffects();
 

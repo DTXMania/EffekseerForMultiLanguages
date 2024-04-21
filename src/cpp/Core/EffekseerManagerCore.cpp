@@ -246,13 +246,13 @@ void EffekseerManagerCore::Update(float deltaFrames)
 		manager_->Update(0);
 }
 
-int EffekseerManagerCore::Play(EffekseerEffectCore* effect)
+int EffekseerManagerCore::Play(EffekseerEffectCore* effect, float x, float y, float z, int32_t startFrame)
 {
 	if (manager_ == nullptr)
 	{
 		return -1;
 	}
-	return manager_->Play(effect->GetInternal(), ::Effekseer::Vector3D());
+	return manager_->Play(effect->GetInternal(), ::Effekseer::Vector3D(x, y, z), startFrame);
 }
 
 void EffekseerManagerCore::StopAllEffects() { return manager_->StopAllEffects(); }
