@@ -51,6 +51,8 @@ public:
 
 	void SetEffectRotation(int handle, float x, float y, float z);
 
+	void SetEffectRotation(int handle, float axis_x, float axis_y, float axis_z, float angle);
+
 	void SetEffectScale(int handle, float x, float y, float z);
 
 	void SetLayerParameter(int layer, float viewerPosX, float viewerPosY, float viewerPosZ, float distanceBias);

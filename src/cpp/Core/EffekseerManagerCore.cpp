@@ -265,6 +265,11 @@ void EffekseerManagerCore::SetEffectPosition(int handle, float x, float y, float
 
 void EffekseerManagerCore::SetEffectRotation(int handle, float x, float y, float z) { manager_->SetRotation(handle, x, y, z); }
 
+void EffekseerManagerCore::SetEffectRotation(int handle, float axis_x, float axis_y, float axis_z, float angle)
+{
+	manager_->SetRotation(handle, ::Effekseer::Vector3D(axis_x, axis_y, axis_z), angle);
+}
+
 void EffekseerManagerCore::SetEffectScale(int handle, float x, float y, float z) { manager_->SetScale(handle, x, y, z); }
 
 void EffekseerManagerCore::SetLayerParameter(int layer, float viewerPosX, float viewerPosY, float viewerPosZ, float distanceBias)
