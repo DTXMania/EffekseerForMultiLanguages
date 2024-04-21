@@ -97,6 +97,8 @@ public:
 
 	void DrawFront(int layer = 1);
 
+	void DrawHandle(int handle, float zNear = 0, float zFar = 1);
+
 	void SetLayer(int handle, int layer);
 
 	void SetCameraParameter(float frontX, float frontY, float frontZ, float posX, float posY, float posZ);

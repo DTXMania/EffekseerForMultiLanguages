@@ -377,6 +377,15 @@ void EffekseerManagerCore::DrawFront(int layer)
 	renderer_->EndRendering();
 }
 
+void EffekseerManagerCore::DrawHandle(int handle, float zNear, float zFar)
+{
+	::Effekseer::Manager::DrawParameter drawParameter;
+	drawParameter.ZNear = zNear;
+	drawParameter.ZFar = zFar;
+	drawParameter.ViewProjectionMatrix = renderer_->GetCameraProjectionMatrix();
+	manager_->DrawHandle(handle, drawParameter);
+}
+
 void EffekseerManagerCore::SetLayer(int handle, int layer) { return manager_->SetLayer(handle, layer); }
 
 void EffekseerManagerCore::SendTrigger(int handle, int index) { return manager_->SendTrigger(handle, index); }
