@@ -95,4 +95,9 @@ public:
 
 	int32_t GetTermMax();
 	int32_t GetTermMin();
+
+	const char16_t* GetName() const;
+	void SetName(const char16_t* name);
+
+	int GetVersion() const;
 };

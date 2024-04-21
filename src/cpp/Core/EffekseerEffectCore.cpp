@@ -189,3 +189,9 @@ int32_t EffekseerEffectCore::GetTermMin()
 	Effekseer::EffectTerm t = effect_->CalculateTerm();
 	return t.TermMin;
 }
+
+const char16_t* EffekseerEffectCore::GetName() const { return effect_->GetName(); }
+
+void EffekseerEffectCore::SetName(const char16_t* name) { effect_->SetName(name); }
+
+int EffekseerEffectCore::GetVersion() const { return effect_->GetVersion(); }
