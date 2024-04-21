@@ -29,6 +29,10 @@ public:
 
 	void Update(float deltaFrames);
 
+	void UpdateHandle(int handle);
+
+	void UpdateHandle(int handle, float deltaFrames);
+	
 	void BeginUpdate();
 
 	void EndUpdate();

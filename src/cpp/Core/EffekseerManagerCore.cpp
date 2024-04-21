@@ -246,6 +246,33 @@ void EffekseerManagerCore::Update(float deltaFrames)
 		manager_->Update(0);
 }
 
+void EffekseerManagerCore::UpdateHandle(int handle)
+{
+	if (manager_ == nullptr)
+	{
+		return;
+	}
+
+	manager_->UpdateHandle(handle);
+}
+
+void EffekseerManagerCore::UpdateHandle(int handle, float deltaFrames)
+{
+	if (manager_ == nullptr)
+	{
+		return;
+	}
+
+	deltaFrames += restDeltaTime_;
+	restDeltaTime_ = deltaFrames - int(deltaFrames);
+	for (int loop = 0; loop < int(deltaFrames); loop++)
+	{
+		manager_->UpdateHandle(handle, 1);
+	}
+	if (int(deltaFrames) == 0)
+		manager_->UpdateHandle(handle, 0);
+}
+
 int EffekseerManagerCore::Play(EffekseerEffectCore* effect, float x, float y, float z, int32_t startFrame)
 {
 	if (manager_ == nullptr)
