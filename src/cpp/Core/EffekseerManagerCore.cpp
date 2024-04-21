@@ -168,6 +168,26 @@ void EffekseerManagerCore::EndUpdate()
 	manager_->EndUpdate();
 }
 
+bool EffekseerManagerCore::BeginRendering()
+{
+	if (renderer_ == nullptr)
+	{
+		return false;
+	}
+
+	return renderer_->BeginRendering();
+}
+
+bool EffekseerManagerCore::EndRendering()
+{
+	if (renderer_ == nullptr)
+	{
+		return false;
+	}
+
+	return renderer_->EndRendering();
+}
+
 void EffekseerManagerCore::UpdateHandleToMoveToFrame(int handle, float v)
 {
 	if (manager_ == nullptr)
