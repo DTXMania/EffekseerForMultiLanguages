@@ -310,13 +310,13 @@ class EffekseerCorePINVOKE {
   public static extern bool EffekseerManagerCore_InitializeOpenGL__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_InitializeDX11__SWIG_0___")]
-  public static extern bool EffekseerManagerCore_InitializeDX11__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.IntPtr jarg2, global::System.IntPtr jarg3, int jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6, bool jarg7);
+  public static extern bool EffekseerManagerCore_InitializeDX11__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.IntPtr jarg2, global::System.IntPtr jarg3, int jarg4, int jarg5, bool jarg6, bool jarg7);
 
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_InitializeDX11__SWIG_1___")]
-  public static extern bool EffekseerManagerCore_InitializeDX11__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.IntPtr jarg2, global::System.IntPtr jarg3, int jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6);
+  public static extern bool EffekseerManagerCore_InitializeDX11__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.IntPtr jarg2, global::System.IntPtr jarg3, int jarg4, int jarg5, bool jarg6);
 
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_InitializeDX11__SWIG_2___")]
-  public static extern bool EffekseerManagerCore_InitializeDX11__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.IntPtr jarg2, global::System.IntPtr jarg3, int jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
+  public static extern bool EffekseerManagerCore_InitializeDX11__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.IntPtr jarg2, global::System.IntPtr jarg3, int jarg4, int jarg5);
 
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_InitializeDX11__SWIG_3___")]
   public static extern bool EffekseerManagerCore_InitializeDX11__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.IntPtr jarg2, global::System.IntPtr jarg3, int jarg4);

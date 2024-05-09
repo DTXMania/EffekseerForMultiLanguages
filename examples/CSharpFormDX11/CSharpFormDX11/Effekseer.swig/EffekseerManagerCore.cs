@@ -70,21 +70,18 @@ public class EffekseerManagerCore : global::System.IDisposable {
     return ret;
   }
 
-  public bool InitializeDX11(global::System.IntPtr device, global::System.IntPtr context, int spriteMaxCount, SWIGTYPE_p_D3D11_COMPARISON_FUNC comparisonFunc, bool srgbMode, bool isMSAAEnabled) {
-    bool ret = EffekseerCorePINVOKE.EffekseerManagerCore_InitializeDX11__SWIG_0(swigCPtr, device, context, spriteMaxCount, SWIGTYPE_p_D3D11_COMPARISON_FUNC.getCPtr(comparisonFunc), srgbMode, isMSAAEnabled);
-    if (EffekseerCorePINVOKE.SWIGPendingException.Pending) throw EffekseerCorePINVOKE.SWIGPendingException.Retrieve();
+  public bool InitializeDX11(global::System.IntPtr device, global::System.IntPtr context, int spriteMaxCount, D3D11_COMPARISON_FUNC comparisonFunc, bool srgbMode, bool isMSAAEnabled) {
+    bool ret = EffekseerCorePINVOKE.EffekseerManagerCore_InitializeDX11__SWIG_0(swigCPtr, device, context, spriteMaxCount, (int)comparisonFunc, srgbMode, isMSAAEnabled);
     return ret;
   }
 
-  public bool InitializeDX11(global::System.IntPtr device, global::System.IntPtr context, int spriteMaxCount, SWIGTYPE_p_D3D11_COMPARISON_FUNC comparisonFunc, bool srgbMode) {
-    bool ret = EffekseerCorePINVOKE.EffekseerManagerCore_InitializeDX11__SWIG_1(swigCPtr, device, context, spriteMaxCount, SWIGTYPE_p_D3D11_COMPARISON_FUNC.getCPtr(comparisonFunc), srgbMode);
-    if (EffekseerCorePINVOKE.SWIGPendingException.Pending) throw EffekseerCorePINVOKE.SWIGPendingException.Retrieve();
+  public bool InitializeDX11(global::System.IntPtr device, global::System.IntPtr context, int spriteMaxCount, D3D11_COMPARISON_FUNC comparisonFunc, bool srgbMode) {
+    bool ret = EffekseerCorePINVOKE.EffekseerManagerCore_InitializeDX11__SWIG_1(swigCPtr, device, context, spriteMaxCount, (int)comparisonFunc, srgbMode);
     return ret;
   }
 
-  public bool InitializeDX11(global::System.IntPtr device, global::System.IntPtr context, int spriteMaxCount, SWIGTYPE_p_D3D11_COMPARISON_FUNC comparisonFunc) {
-    bool ret = EffekseerCorePINVOKE.EffekseerManagerCore_InitializeDX11__SWIG_2(swigCPtr, device, context, spriteMaxCount, SWIGTYPE_p_D3D11_COMPARISON_FUNC.getCPtr(comparisonFunc));
-    if (EffekseerCorePINVOKE.SWIGPendingException.Pending) throw EffekseerCorePINVOKE.SWIGPendingException.Retrieve();
+  public bool InitializeDX11(global::System.IntPtr device, global::System.IntPtr context, int spriteMaxCount, D3D11_COMPARISON_FUNC comparisonFunc) {
+    bool ret = EffekseerCorePINVOKE.EffekseerManagerCore_InitializeDX11__SWIG_2(swigCPtr, device, context, spriteMaxCount, (int)comparisonFunc);
     return ret;
   }
 
