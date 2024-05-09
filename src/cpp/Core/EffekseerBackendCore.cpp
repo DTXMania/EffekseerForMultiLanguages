@@ -1,5 +1,6 @@
 #include "EffekseerBackendCore.h"
 #include <Effekseer.h>
+#include <EffekseerRendererCommon/TextureLoader.h>
 #include <EffekseerRendererGL.h>
 
 #ifdef _WIN32
