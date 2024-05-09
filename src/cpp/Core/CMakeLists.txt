@@ -44,7 +44,7 @@ if(WIN32)
   )
 endif()
 
-target_compile_features(EffekseerCore PUBLIC cxx_std_14)
+target_compile_features(EffekseerCore PUBLIC cxx_std_17)
 
 if(NOT WIN32)
   find_package(OpenGL REQUIRED)
