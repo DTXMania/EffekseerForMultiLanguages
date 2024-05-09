@@ -14,9 +14,9 @@ Effekseer for C#, Java and Python
 ### Build
 
 ```
-git clone https://github.com/effekseer/EffekseerForMultiLanguages.git
+git clone https://github.com/DTXMania/EffekseerForMultiLanguages.git
 cd EffekseerForMultiLanguages
-git submodule update --init
+git submodule update --init --recursive
 ```
 
 #### Windows
@@ -25,7 +25,11 @@ git submodule update --init
 cd src
 generate_swig_wrapper.bat
 cd ..
+cmake -B build -S .
 ```
+
+After cmake completes, open build/EffekseerForMultiLanguages.sln in Visual Studio, and build EffekseerNativeForCSharp/Java/Python project.
+
 
 #### Mac, Linux
 
@@ -33,16 +37,20 @@ cd ..
 cd src
 sh generate_swig_wrapper.sh
 cd ..
-```
-
-
-```
 cmake -B build -S .
 ```
 
 ## How to use
 
-### libGDX
+### C#
+
+Add the following files to your project.
+* EffekseerNativeForCSharp.dll
+* src/csharp/swig/*.cs
+
+please see examples/CSharpFormDX11 solution.
+
+### libGDX sample
 
 please see examples
 
