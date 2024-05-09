@@ -94,6 +94,14 @@ public class EffekseerManagerCore : global::System.IDisposable {
     EffekseerCorePINVOKE.EffekseerManagerCore_Update(swigCPtr, deltaFrames);
   }
 
+  public void UpdateHandle(int handle) {
+    EffekseerCorePINVOKE.EffekseerManagerCore_UpdateHandle__SWIG_0(swigCPtr, handle);
+  }
+
+  public void UpdateHandle(int handle, float deltaFrames) {
+    EffekseerCorePINVOKE.EffekseerManagerCore_UpdateHandle__SWIG_1(swigCPtr, handle, deltaFrames);
+  }
+
   public void BeginUpdate() {
     EffekseerCorePINVOKE.EffekseerManagerCore_BeginUpdate(swigCPtr);
   }
@@ -102,12 +110,42 @@ public class EffekseerManagerCore : global::System.IDisposable {
     EffekseerCorePINVOKE.EffekseerManagerCore_EndUpdate(swigCPtr);
   }
 
+  public bool BeginRendering() {
+    bool ret = EffekseerCorePINVOKE.EffekseerManagerCore_BeginRendering(swigCPtr);
+    return ret;
+  }
+
+  public bool EndRendering() {
+    bool ret = EffekseerCorePINVOKE.EffekseerManagerCore_EndRendering(swigCPtr);
+    return ret;
+  }
+
   public void UpdateHandleToMoveToFrame(int handle, float v) {
     EffekseerCorePINVOKE.EffekseerManagerCore_UpdateHandleToMoveToFrame(swigCPtr, handle, v);
   }
 
+  public int Play(EffekseerEffectCore effect, float x, float y, float z, int startFrame) {
+    int ret = EffekseerCorePINVOKE.EffekseerManagerCore_Play__SWIG_0(swigCPtr, EffekseerEffectCore.getCPtr(effect), x, y, z, startFrame);
+    return ret;
+  }
+
+  public int Play(EffekseerEffectCore effect, float x, float y, float z) {
+    int ret = EffekseerCorePINVOKE.EffekseerManagerCore_Play__SWIG_1(swigCPtr, EffekseerEffectCore.getCPtr(effect), x, y, z);
+    return ret;
+  }
+
+  public int Play(EffekseerEffectCore effect, float x, float y) {
+    int ret = EffekseerCorePINVOKE.EffekseerManagerCore_Play__SWIG_2(swigCPtr, EffekseerEffectCore.getCPtr(effect), x, y);
+    return ret;
+  }
+
+  public int Play(EffekseerEffectCore effect, float x) {
+    int ret = EffekseerCorePINVOKE.EffekseerManagerCore_Play__SWIG_3(swigCPtr, EffekseerEffectCore.getCPtr(effect), x);
+    return ret;
+  }
+
   public int Play(EffekseerEffectCore effect) {
-    int ret = EffekseerCorePINVOKE.EffekseerManagerCore_Play(swigCPtr, EffekseerEffectCore.getCPtr(effect));
+    int ret = EffekseerCorePINVOKE.EffekseerManagerCore_Play__SWIG_4(swigCPtr, EffekseerEffectCore.getCPtr(effect));
     return ret;
   }
 
@@ -136,7 +174,11 @@ public class EffekseerManagerCore : global::System.IDisposable {
   }
 
   public void SetEffectRotation(int handle, float x, float y, float z) {
-    EffekseerCorePINVOKE.EffekseerManagerCore_SetEffectRotation(swigCPtr, handle, x, y, z);
+    EffekseerCorePINVOKE.EffekseerManagerCore_SetEffectRotation__SWIG_0(swigCPtr, handle, x, y, z);
+  }
+
+  public void SetEffectRotation(int handle, float axis_x, float axis_y, float axis_z, float angle) {
+    EffekseerCorePINVOKE.EffekseerManagerCore_SetEffectRotation__SWIG_1(swigCPtr, handle, axis_x, axis_y, axis_z, angle);
   }
 
   public void SetEffectScale(int handle, float x, float y, float z) {
@@ -169,6 +211,18 @@ public class EffekseerManagerCore : global::System.IDisposable {
 
   public void DrawFront() {
     EffekseerCorePINVOKE.EffekseerManagerCore_DrawFront__SWIG_1(swigCPtr);
+  }
+
+  public void DrawHandle(int handle, float zNear, float zFar) {
+    EffekseerCorePINVOKE.EffekseerManagerCore_DrawHandle__SWIG_0(swigCPtr, handle, zNear, zFar);
+  }
+
+  public void DrawHandle(int handle, float zNear) {
+    EffekseerCorePINVOKE.EffekseerManagerCore_DrawHandle__SWIG_1(swigCPtr, handle, zNear);
+  }
+
+  public void DrawHandle(int handle) {
+    EffekseerCorePINVOKE.EffekseerManagerCore_DrawHandle__SWIG_2(swigCPtr, handle);
   }
 
   public void SetLayer(int handle, int layer) {

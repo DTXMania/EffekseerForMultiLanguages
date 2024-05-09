@@ -297,6 +297,15 @@ class EffekseerCorePINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerEffectCore_GetTermMin___")]
   public static extern int EffekseerEffectCore_GetTermMin(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerEffectCore_GetName___")]
+  public static extern System.IntPtr EffekseerEffectCore_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerEffectCore_SetName___")]
+  public static extern void EffekseerEffectCore_SetName(global::System.Runtime.InteropServices.HandleRef jarg1, [global::System.Runtime.InteropServices.MarshalAs(global::System.Runtime.InteropServices.UnmanagedType.LPWStr)]string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerEffectCore_GetVersion___")]
+  public static extern int EffekseerEffectCore_GetVersion(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_new_EffekseerManagerCore___")]
   public static extern global::System.IntPtr new_EffekseerManagerCore();
 
@@ -324,17 +333,41 @@ class EffekseerCorePINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_Update___")]
   public static extern void EffekseerManagerCore_Update(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
 
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_UpdateHandle__SWIG_0___")]
+  public static extern void EffekseerManagerCore_UpdateHandle__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_UpdateHandle__SWIG_1___")]
+  public static extern void EffekseerManagerCore_UpdateHandle__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_BeginUpdate___")]
   public static extern void EffekseerManagerCore_BeginUpdate(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_EndUpdate___")]
   public static extern void EffekseerManagerCore_EndUpdate(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_BeginRendering___")]
+  public static extern bool EffekseerManagerCore_BeginRendering(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_EndRendering___")]
+  public static extern bool EffekseerManagerCore_EndRendering(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_UpdateHandleToMoveToFrame___")]
   public static extern void EffekseerManagerCore_UpdateHandleToMoveToFrame(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_Play___")]
-  public static extern int EffekseerManagerCore_Play(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_Play__SWIG_0___")]
+  public static extern int EffekseerManagerCore_Play__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4, float jarg5, int jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_Play__SWIG_1___")]
+  public static extern int EffekseerManagerCore_Play__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_Play__SWIG_2___")]
+  public static extern int EffekseerManagerCore_Play__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_Play__SWIG_3___")]
+  public static extern int EffekseerManagerCore_Play__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_Play__SWIG_4___")]
+  public static extern int EffekseerManagerCore_Play__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_StopAllEffects___")]
   public static extern void EffekseerManagerCore_StopAllEffects(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -354,8 +387,11 @@ class EffekseerCorePINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_SetEffectPosition___")]
   public static extern void EffekseerManagerCore_SetEffectPosition(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, float jarg4, float jarg5);
 
-  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_SetEffectRotation___")]
-  public static extern void EffekseerManagerCore_SetEffectRotation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, float jarg4, float jarg5);
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_SetEffectRotation__SWIG_0___")]
+  public static extern void EffekseerManagerCore_SetEffectRotation__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_SetEffectRotation__SWIG_1___")]
+  public static extern void EffekseerManagerCore_SetEffectRotation__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, float jarg4, float jarg5, float jarg6);
 
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_SetEffectScale___")]
   public static extern void EffekseerManagerCore_SetEffectScale(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, float jarg4, float jarg5);
@@ -380,6 +416,15 @@ class EffekseerCorePINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_DrawFront__SWIG_1___")]
   public static extern void EffekseerManagerCore_DrawFront__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_DrawHandle__SWIG_0___")]
+  public static extern void EffekseerManagerCore_DrawHandle__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_DrawHandle__SWIG_1___")]
+  public static extern void EffekseerManagerCore_DrawHandle__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_DrawHandle__SWIG_2___")]
+  public static extern void EffekseerManagerCore_DrawHandle__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_SetLayer___")]
   public static extern void EffekseerManagerCore_SetLayer(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);

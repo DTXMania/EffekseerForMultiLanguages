@@ -155,6 +155,20 @@ public class EffekseerEffectCore : global::System.IDisposable {
     return ret;
   }
 
+  public string GetName() {
+    string ret = System.Runtime.InteropServices.Marshal.PtrToStringUni(EffekseerCorePINVOKE.EffekseerEffectCore_GetName(swigCPtr));
+    return ret;
+  }
+
+  public void SetName(string name) {
+    EffekseerCorePINVOKE.EffekseerEffectCore_SetName(swigCPtr, name);
+  }
+
+  public int GetVersion() {
+    int ret = EffekseerCorePINVOKE.EffekseerEffectCore_GetVersion(swigCPtr);
+    return ret;
+  }
+
 }
 
 }
