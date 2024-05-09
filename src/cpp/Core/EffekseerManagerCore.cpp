@@ -1,7 +1,8 @@
 #include "EffekseerManagerCore.h"
 #include "EffekseerBackendCore.h"
 #include "EffekseerEffectCore.h"
-#include "EffekseerRenderer/GraphicsDevice.h"
+#include "EffekseerRendererGL/GraphicsDevice.h"
+#include "EffekseerRendererDX11/GraphicsDevice.h"
 #include <EffekseerRendererGL.h>
 #include <EffekseerRendererDX11.h>
 
