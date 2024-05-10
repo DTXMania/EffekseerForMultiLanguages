@@ -470,6 +470,141 @@ class EffekseerCorePINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_EffekseerManagerCore_GetTotalInstanceCount___")]
   public static extern int EffekseerManagerCore_GetTotalInstanceCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_new_Matrix44___")]
+  public static extern global::System.IntPtr new_Matrix44();
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_Values_set___")]
+  public static extern void Matrix44_Values_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_Values_get___")]
+  public static extern global::System.IntPtr Matrix44_Values_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_Indentity___")]
+  public static extern global::System.IntPtr Matrix44_Indentity(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_Transpose___")]
+  public static extern global::System.IntPtr Matrix44_Transpose(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_LookAtRH___")]
+  public static extern global::System.IntPtr Matrix44_LookAtRH(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_LookAtLH___")]
+  public static extern global::System.IntPtr Matrix44_LookAtLH(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_PerspectiveFovRH___")]
+  public static extern global::System.IntPtr Matrix44_PerspectiveFovRH(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_PerspectiveFovRH_OpenGL___")]
+  public static extern global::System.IntPtr Matrix44_PerspectiveFovRH_OpenGL(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_PerspectiveFovLH___")]
+  public static extern global::System.IntPtr Matrix44_PerspectiveFovLH(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_PerspectiveFovLH_OpenGL___")]
+  public static extern global::System.IntPtr Matrix44_PerspectiveFovLH_OpenGL(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_OrthographicRH___")]
+  public static extern global::System.IntPtr Matrix44_OrthographicRH(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_OrthographicLH___")]
+  public static extern global::System.IntPtr Matrix44_OrthographicLH(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_Scaling___")]
+  public static extern void Matrix44_Scaling(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_RotationX___")]
+  public static extern void Matrix44_RotationX(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_RotationY___")]
+  public static extern void Matrix44_RotationY(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_RotationZ___")]
+  public static extern void Matrix44_RotationZ(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_Translation___")]
+  public static extern void Matrix44_Translation(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_RotationAxis___")]
+  public static extern void Matrix44_RotationAxis(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_Quaternion___")]
+  public static extern void Matrix44_Quaternion(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_Mul___")]
+  public static extern global::System.IntPtr Matrix44_Mul(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix44_Inverse___")]
+  public static extern global::System.IntPtr Matrix44_Inverse(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_delete_Matrix44___")]
+  public static extern void delete_Matrix44(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_Value_set___")]
+  public static extern void Matrix43_Value_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_Value_get___")]
+  public static extern global::System.IntPtr Matrix43_Value_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_Indentity___")]
+  public static extern void Matrix43_Indentity(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_Scaling___")]
+  public static extern void Matrix43_Scaling(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_RotationX___")]
+  public static extern void Matrix43_RotationX(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_RotationY___")]
+  public static extern void Matrix43_RotationY(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_RotationZ___")]
+  public static extern void Matrix43_RotationZ(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_RotationXYZ___")]
+  public static extern void Matrix43_RotationXYZ(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_RotationZXY___")]
+  public static extern void Matrix43_RotationZXY(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_RotationAxis__SWIG_0___")]
+  public static extern void Matrix43_RotationAxis__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_RotationAxis__SWIG_1___")]
+  public static extern void Matrix43_RotationAxis__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_Translation___")]
+  public static extern void Matrix43_Translation(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_GetSRT___")]
+  public static extern void Matrix43_GetSRT(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_GetScale___")]
+  public static extern void Matrix43_GetScale(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_GetRotation___")]
+  public static extern void Matrix43_GetRotation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_GetTranslation___")]
+  public static extern void Matrix43_GetTranslation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_SetSRT___")]
+  public static extern void Matrix43_SetSRT(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_ToMatrix44___")]
+  public static extern void Matrix43_ToMatrix44(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_IsValid___")]
+  public static extern bool Matrix43_IsValid(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_Matrix43_Multiple___")]
+  public static extern void Matrix43_Multiple(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_new_Matrix43___")]
+  public static extern global::System.IntPtr new_Matrix43();
+
+  [global::System.Runtime.InteropServices.DllImport("EffekseerNativeForCSharp", EntryPoint="CSharp_Effekseerfswig_delete_Matrix43___")]
+  public static extern void delete_Matrix43(global::System.Runtime.InteropServices.HandleRef jarg1);
 }
 
 }

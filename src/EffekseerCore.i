@@ -35,3 +35,7 @@
 %include "cpp/Core/EffekseerBackendCore.h"
 %include "cpp/Core/EffekseerEffectCore.h"
 %include "cpp/Core/EffekseerManagerCore.h"
+
+%import "cpp/Effekseer/Dev/Cpp/Effekseer/Effekseer/Effekseer.Vector3D.h"
+%include "cpp/Effekseer/Dev/Cpp/Effekseer/Effekseer/Effekseer.Matrix44.h"
+%include "cpp/Effekseer/Dev/Cpp/Effekseer/Effekseer/Effekseer.Matrix43.h"

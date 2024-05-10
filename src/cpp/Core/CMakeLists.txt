@@ -13,7 +13,8 @@ add_library(
   EffekseerEffectCore.h
   EffekseerEffectCore.cpp
   EffekseerManagerCore.h
-  EffekseerManagerCore.cpp)
+  EffekseerManagerCore.cpp
+  EffekseerD3D11.h)
 
 target_include_directories(
   EffekseerCore

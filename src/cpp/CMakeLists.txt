@@ -51,6 +51,7 @@ find_package(PythonLibs)
 add_library(EffekseerNativeForCSharp
   SHARED
   csharp/dll.cpp
+  csharp/dll2.cpp
 )
 
 target_link_libraries(EffekseerNativeForCSharp
